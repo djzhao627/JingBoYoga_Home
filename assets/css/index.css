@@ -1,7 +1,11 @@
+body {
+    font-size: 10px;
+}
+
 /*导航栏*/
 .nav {
     width: 100%;
-    height: 145px;
+    height: 14.5em;
     background-color: #3bd8cf;
     display: flex;
 }
@@ -15,17 +19,18 @@
 }
 
 .nav_logo img {
-    width: 50%;
+    width: 45%;
 }
 
 .nav_menu {
-    padding: 5%;
     flex: 3;
+    padding: 0 5%;
     display: flex;
     align-items: center;
 }
 
 .nav_menu .nav_title {
+    font-size: 2.4em;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -35,11 +40,11 @@
     list-style: none;
     color: #fff;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 0.5em;
 }
 
 .nav_active {
-    border-bottom: 3px solid #fff;
+    border-bottom: 0.2em solid #fff;
 }
 
 /*首页轮播图*/
@@ -58,7 +63,7 @@
 
 /*标题介绍*/
 .course_introduce {
-    height: 314px;
+    height: 31.5em;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -68,8 +73,8 @@
 }
 
 .course_introduce .intro_title {
-    font-size: 60px;
-    margin: 20px 0;
+    font-size: 6em;
+    margin: 0.3em 0;
 }
 
 .course_introduce .intro_title .title_light {
@@ -77,12 +82,12 @@
 }
 
 .course_introduce .intro_sub_title {
-    font-size: 30px;
+    font-size: 3em;
     font-weight: normal;
 }
 
 .course_introduce .intro_sub_title .capital {
-    font-size: 36px;
+    font-size: 1.2em;
 }
 
 /*课程展示*/
@@ -95,8 +100,8 @@
 }
 
 .course {
-    box-shadow: 0 0 15px #0000001e;
-    margin-bottom: 40px;
+    box-shadow: 0 0 1.5em #0000001e;
+    margin-bottom: 4em;
     width: 44.44%;
     display: flex;
 }
@@ -119,52 +124,316 @@
 
 .course_info .title {
     color: #65e3dc;
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: bold;
 }
 
 .course_info .sub_title {
     color: #1f1c1f;
-    font-size: 18px;
-    line-height: 20px;
-    margin-top: 10px;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin: 1em 0;
 }
 
 .course_info .inquire {
     border-style: none;
     width: 80%;
     background-color: #3bd8cf;
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 600;
     color: white;
-    padding: 5px;
-    border-radius: 28px;
+    padding: 0.5em;
+    border-radius: 2.8em;
 }
 
 .course_info .course_points {
-    line-height: 25px;
-    padding-left: 14px;
-    font-size: 16px;
+    line-height: 2.5em;
+    padding-left: 1.4em;
+    font-size: 1.6em;
     color: #3bd8cf;
     list-style-image: url("../images/dot.png");
 }
 
 .course_info .recommend_level {
-    font-size: 16px;
+    font-size: 1.6em;
     color: #3bd8cf;
 }
 
 .course_info .recommend_level img {
     vertical-align: text-top;
-    margin-right: 8px;
+    margin-right: 0.2em;
 }
 
 /*权威信息*/
 .authority {
     background-color: #3ddcd3;
-    margin-top: 50px;
+    margin-top: 5em;
+    padding-top: 17em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper {
+.authority .p1 {
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-weight: 700;
+}
 
+.authority .p2 {
+    font-size: 2.4em;
+    color: #322f2f;
+    margin-bottom: 0.5em;
+}
+
+.authority .RYT {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+
+.authority .p3 {
+    font-size: 3em;
+    color: #322f2f;
+    letter-spacing: 0.5em;
+    margin-bottom: 5em;
+}
+
+
+/*名师团队*/
+.team {
+    padding-top: 18em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .p1 {
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.team .p2 {
+    margin-top: 2em;
+    font-size: 3.6em;
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.team .team_member {
+    width: 90%;
+    margin-top: 19em;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team .team_member .member {
+    width: 24%;
+    margin-bottom: 7em;
+}
+
+.team .team_member .member p {
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+
+/*教学环境*/
+.surroundings {
+    margin-top: 18em;
+    padding: 0 6%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.surroundings .p1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.surroundings .p2 {
+    margin-top: 1em;
+    font-size: 3.6em;
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.surroundings .equipment {
+    margin-top: 18em;
+    width: 100%;
+}
+
+.equipment .line_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipment .line_1 .line_1_left {
+    width: 66%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.equipment .line_1 .line_1_left img:nth-child(-n + 2) {
+    width: 49.5%;
+}
+
+.equipment .line_1 .line_1_left img:nth-child(3) {
+    margin-top: 0.5%;
+    width: 100%;
+}
+
+.equipment .line_1 .line_1_right {
+    width: 33%;
+}
+
+.equipment .line_1 .line_1_right img {
+    width: 100%;
+    height: 100%;
+}
+
+.equipment .line_2 {
+    margin-top: 0.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipment .line_2 img:nth-child(1) {
+    width: 33%;
+}
+
+.equipment .line_2 img:nth-child(2) {
+    width: 66%;
+}
+
+
+/*进行预约*/
+.booking {
+    margin-top: 18em;
+    padding: 0 6%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_form {
+    padding-top: 11em;
+    width: 80%;
+    background-color: #43d6cd;
+    border-radius: 1em;
+    padding-bottom: 5em;
+    padding-left: 15%;
+}
+
+.book_form table {
+    border-collapse: separate;
+    border-spacing: 3.6em;
+}
+
+.book_form table tr td span {
+    font-size: 4.8em;
+    color: white;
+    font-weight: normal;
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.book_form table tr:nth-child(-n + 3) td input {
+    font-size: 4.8em;
+    background-color: #fff0;
+    border: 1px solid #fff;
+    border-radius: 0.2em;
+}
+
+.book_form table tr:nth-child(4) td input {
+    background-color: white;
+    border-radius: 0.5em;
+    border-style: none;
+    color: #3bd8cf;
+    font-size: 4.2em;
+    padding: 1% 6%;
+    font-weight: 700;
+}
+
+/*加入我们*/
+.join_us {
+    margin-top: 17em;
+    width: 100%;
+    background-image: url("../images/joinus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #3bd8cf;
+    height: 55.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.join_us .top {
+    padding-top: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.join_us .top .item p {
+    font-size: 3.8em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.join_us .bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.join_us .bottom input {
+    border: 1px solid white;
+    background-color: #0000;
+    width: 30%;
+    border-radius: 1em;
+    line-height: 1.2em;
+    padding-left: 2%;
+    color: white;
+    font-size: 3em;
+}
+
+.join_us .bottom span {
+    font-size: 2.4em;
+    color: white;
+}
+
+/*门店信息*/
+.shops {
+    width: 76%;
+    padding: 5% 12%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shops .address {
+    margin-top: 5em;
+}
+
+.shops .address p {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.shops .address p:nth-child(1) {
+    font-weight: 700;
 }
