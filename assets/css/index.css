@@ -1,0 +1,170 @@
+/*导航栏*/
+.nav {
+    width: 100%;
+    height: 145px;
+    background-color: #3bd8cf;
+    display: flex;
+}
+
+.nav_logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.nav_logo img {
+    width: 50%;
+}
+
+.nav_menu {
+    padding: 5%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu .nav_title {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav_menu .nav_title li {
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.nav_active {
+    border-bottom: 3px solid #fff;
+}
+
+/*首页轮播图*/
+.swiper {
+    width: 100%;
+}
+
+.swiper img {
+    width: 100%;
+}
+
+/*精品课程*/
+.quality_course {
+    width: 100%;
+}
+
+/*标题介绍*/
+.course_introduce {
+    height: 314px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #939393;
+}
+
+.course_introduce .intro_title {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.course_introduce .intro_title .title_light {
+    color: #5ee7df;
+}
+
+.course_introduce .intro_sub_title {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.course_introduce .intro_sub_title .capital {
+    font-size: 36px;
+}
+
+/*课程展示*/
+.courses {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course {
+    box-shadow: 0 0 15px #0000001e;
+    margin-bottom: 40px;
+    width: 44.44%;
+    display: flex;
+}
+
+.course_img {
+    width: 60%;
+}
+
+.course_img img {
+    width: 100%;
+}
+
+.course_info {
+    width: 30%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.course_info .title {
+    color: #65e3dc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course_info .sub_title {
+    color: #1f1c1f;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.course_info .inquire {
+    border-style: none;
+    width: 80%;
+    background-color: #3bd8cf;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+    border-radius: 28px;
+}
+
+.course_info .course_points {
+    line-height: 25px;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #3bd8cf;
+    list-style-image: url("../images/dot.png");
+}
+
+.course_info .recommend_level {
+    font-size: 16px;
+    color: #3bd8cf;
+}
+
+.course_info .recommend_level img {
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+
+/*权威信息*/
+.authority {
+    background-color: #3ddcd3;
+    margin-top: 50px;
+}
+
+.wrapper {
+
+}
