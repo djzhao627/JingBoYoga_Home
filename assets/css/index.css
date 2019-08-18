@@ -142,6 +142,17 @@ html {
     justify-content: space-around;
 }
 
+.course_info .info_top {
+    display: block;
+    position: relative;
+}
+
+.course_info .info_top .badge {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+
 .course_info .title {
     color: #65e3dc;
     font-size: 2rem;
