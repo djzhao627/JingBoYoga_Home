@@ -320,11 +320,12 @@ html {
 
 .equipment .line_1 .line_1_left img:nth-child(-n + 2) {
     width: 49.5%;
+    height: 49%;
 }
 
 .equipment .line_1 .line_1_left img:nth-child(3) {
-    margin-top: 0.5%;
     width: 100%;
+    height: 49%;
 }
 
 .equipment .line_1 .line_1_right {
@@ -333,6 +334,7 @@ html {
 
 .equipment .line_1 .line_1_right img {
     width: 100%;
+    height: 99%;
 }
 
 .equipment .line_2 {
