@@ -307,7 +307,7 @@ html {
 
 .equipment .line_1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .equipment .line_1 .line_1_left {
@@ -333,14 +333,13 @@ html {
 
 .equipment .line_1 .line_1_right img {
     width: 100%;
-    height: 100%;
 }
 
 .equipment .line_2 {
     margin-top: 0.5%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .equipment .line_2 img:nth-child(1) {
