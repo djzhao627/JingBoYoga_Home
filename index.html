@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="app">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -8,6 +8,7 @@
     <title>JingBo</title>
 </head>
 <body>
+    
 <!--导航栏-->
 <nav class="nav">
     <div class="nav_logo">
@@ -52,7 +53,7 @@
             <div class="course_info">
                 <div class="info_top">
                     <p class="title">0基础瑜伽教练培训</p>
-                    <p class="sub_title">成为老师的必经之路成为老师的必经之路</p>
+                    <p class="sub_title">成为老师的必经之路</p>
                     <ul class="course_points">
                         <li>零门槛入门</li>
                         <li>免费复训</li>
@@ -177,19 +178,19 @@
 
 <!--权威信息-->
 <div class="authority">
-    <p class="p1">全美瑜伽联盟权威认证，专注于培养国际级瑜伽老师</p>
-    <p class="p2">Yoga Alliance USA，全美瑜伽联盟创始于1982年,是世界权威瑜伽培训机构。该联盟召集全美乃至世界权威瑜伽专业</p>
-    <p class="p2">人士经过对各个流派的培训体系的统一讨论和研究归纳，制定国际认证瑜伽教师培训标准,毕业颁发全球认可的瑜伽证书。</p>
+    <p class="p1 text-center">全美瑜伽联盟权威认证，专注于培养国际级瑜伽老师</p>
+    <p class="p2 text-center">Yoga Alliance USA，全美瑜伽联盟创始于1982年,是世界权威瑜伽培训机构。该联盟召集全美乃至世界权威瑜伽专业</p>
+    <p class="p2 text-center">人士经过对各个流派的培训体系的统一讨论和研究归纳，制定国际认证瑜伽教师培训标准,毕业颁发全球认可的瑜伽证书。</p>
     <div class="RYT">
         <img src="./assets/images/RYT.png" alt="">
     </div>
-    <p class="p3">静波瑜伽-RYT认证培训学习</p>
+    <p class="p3 text-center">静波瑜伽-RYT认证培训学习</p>
 </div>
 
 <!--名师团队-->
 <div class="team">
-    <p class="p1">名师教学团队</p>
-    <p class="p2">专业核心师资团队，金牌国内外资深瑜伽导师，助你走上高薪之路</p>
+    <p class="p1 text-center">名师教学团队</p>
+    <p class="p2 text-center">专业核心师资团队，金牌国内外资深瑜伽导师，助你走上高薪之路</p>
     <div class="team_member">
         <div class="member text-center">
             <img src="./assets/images/member01.png" alt="">
@@ -290,28 +291,30 @@
 </div>
 
 <!--加入我们-->
-<div class="join_us">
-    <div class="top">
-        <div class="item text-center">
-            <p class="text-center">关于我们</p>
-            <img src="./assets/images/about_us.png" alt="">
+<div class="">
+    <div class="join_us">
+        <div class="top">
+            <div class="item text-center">
+                <p class="text-center">关于我们</p>
+                <img src="./assets/images/about_us.png" alt="">
+            </div>
+            <div class="item text-center">
+                <p class="text-center">常见问题</p>
+                <img src="./assets/images/faq.png" alt="">
+            </div>
+            <div class="item text-center">
+                <p class="text-center">加入微博</p>
+                <img src="./assets/images/weibo.png" alt="">
+            </div>
+            <div class="item text-center">
+                <p class="text-center">联系我们</p>
+                <img src="./assets/images/contact.png" alt="">
+            </div>
         </div>
-        <div class="item text-center">
-            <p class="text-center">常见问题</p>
-            <img src="./assets/images/faq.png" alt="">
+        <div class="bottom">
+            <span class="link">友情链接：xxxxxxxxxxxx</span>
+            <span class="copy">版权所有：静波瑜伽学院 © 2009-2019. JumBoYoga. All rights reserved .</span>
         </div>
-        <div class="item text-center">
-            <p class="text-center">加入微博</p>
-            <img src="./assets/images/weibo.png" alt="">
-        </div>
-        <div class="item text-center">
-            <p class="text-center">联系我们</p>
-            <img src="./assets/images/contact.png" alt="">
-        </div>
-    </div>
-    <div class="bottom">
-        <input type="text" value="友情链接：xxxxxxxxxxxx">
-        <span>版权所有：静波瑜伽学院 © 2009-2019. JumBoYoga. All rights reserved .</span>
     </div>
 </div>
 
@@ -359,3 +362,9 @@
 </div>
 </body>
 </html>
+
+<script>
+    let width = document.body.clientWidth;
+    let baseSize = width * 12 / 1920;
+    document.getElementById("app").style.fontSize = baseSize + "px";
+</script>

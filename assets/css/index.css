@@ -1,25 +1,6 @@
 html {
-    font-size: 10px;
     outline-style: none;
 }
-
-@media screen and (max-width: 1000px) { 
-    html {
-        font-size: 8px;
-    }
-} 
-
-@media screen and (max-width: 800px) { 
-    html {
-        font-size: 7px;
-    }
-} 
-
-@media screen and (max-width: 700px) { 
-    html {
-        font-size: 6px;
-    }
-} 
 
 /*导航栏*/
 .nav {
@@ -38,7 +19,7 @@ html {
 }
 
 .nav_logo img {
-    width: 45%;
+    width: 50%;
 }
 
 .nav_menu {
@@ -81,7 +62,7 @@ html {
 }
 
 /*标题介绍*/
-.course_introduce {
+.quality_course .course_introduce {
     height: 31.5rem;
     width: 100%;
     display: flex;
@@ -91,16 +72,16 @@ html {
     color: #939393;
 }
 
-.course_introduce .intro_title {
+.quality_course .course_introduce .intro_title {
     font-size: 6rem;
     margin: 0.3rem 0;
 }
 
-.course_introduce .intro_title .title_light {
+.quality_course .course_introduce .intro_title .title_light {
     color: #5ee7df;
 }
 
-.course_introduce .intro_sub_title {
+.quality_course .course_introduce .intro_sub_title {
     font-size: 3.6rem;
     font-weight: normal;
 }
@@ -112,11 +93,11 @@ html {
 /*课程展示*/
 .courses {
     margin: 0 auto;
-    width: 96%;
-    padding: 0 2%;
+    width: 88%;
+    padding: 0 6%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .course {
@@ -127,7 +108,7 @@ html {
 }
 
 .course_img {
-    width: 60%;
+    width: 54%;
 }
 
 .course_img img {
@@ -136,7 +117,8 @@ html {
 
 .course_info {
     width: 36%;
-    padding: 0 2% 0 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -148,30 +130,30 @@ html {
 }
 
 .course_info .info_top .badge {
-    width: 30%;
+    width: 35%;
     position: absolute;
-    bottom: 5%;
-    left: 45%;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .course_info .title {
     color: #65e3dc;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
 .course_info .sub_title {
     color: #1f1c1f;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.9rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 .course_info .inquire {
     border-style: none;
     width: 80%;
     background-color: #3bd8cf;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: white;
     padding: 0.5rem;
@@ -179,11 +161,18 @@ html {
 }
 
 .course_info .course_points {
-    line-height: 2.5rem;
-    padding-left: 1.4rem;
-    font-size: 1.4rem;
+    margin-top: 1rem;
+    line-height: 2.8rem;
+    font-size: 1.6rem;
     color: #3bd8cf;
-    list-style-image: url("../images/dot.png");
+}
+
+.course_info .course_points li {
+    background-image: url("../images/dot.png");
+    background-size: 0.8rem;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    padding-left: 1.4rem;
 }
 
 .course_info .recommend_level {
@@ -194,7 +183,7 @@ html {
 .course_info .recommend_level img {
     width: 8%;
     vertical-align: text-top;
-    margin-right: 0.2%;
+    margin-right: 0.2rem;
 }
 
 /*权威信息*/
@@ -202,9 +191,7 @@ html {
     background-color: #3ddcd3;
     margin-top: 5rem;
     padding-top: 17rem;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,25 +199,26 @@ html {
 }
 
 .authority .p1 {
-    margin-bottom: 1rem;
     font-size: 3rem;
-    font-weight: 700;
+    margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .authority .p2 {
     font-size: 2.4rem;
+    padding: 0 3rem;
     color: #322f2f;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .authority .RYT {
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
 .authority .RYT img{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: block;
 }
@@ -239,7 +227,7 @@ html {
     font-size: 3rem;
     color: #322f2f;
     letter-spacing: 0.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
 }
 
 
@@ -247,10 +235,6 @@ html {
 .team {
     padding-top: 18rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .team .p1 {
@@ -267,15 +251,19 @@ html {
 .team .team_member {
     width: 90%;
     margin-top: 19rem;
-    padding: 0 5%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .team .team_member .member {
-    width: 24%;
+    width: 22%;
     margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -285,7 +273,7 @@ html {
 
 .team .team_member .member p {
     font-size: 3rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -367,8 +355,7 @@ html {
 /*进行预约*/
 .booking {
     margin-top: 18rem;
-    padding: 0 6%;
-    width: 88%;
+    padding: 0 6.67%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -376,36 +363,39 @@ html {
 }
 
 .book_form {
+    width: 70%;
     padding-top: 11rem;
-    width: 80%;
     background-color: #43d6cd;
     border-radius: 1rem;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 5rem;
 }
 
 .book_form table {
     border-collapse: separate;
-    border-spacing: 3.6rem;
+    border-spacing: 3rem;
 }
 
 .book_form table tr td span {
-    font-size: 4rem;
+    font-size: 4.6rem;
     color: white;
     font-weight: normal;
     font-family: "Microsoft YaHei UI Light", serif;
 }
 
 .book_form table tr:nth-child(-n + 3) td input {
-    width: 100%;
-    font-size: 4rem;
+    -webkit-width: 45%;
+    -moz-width:64rem;
+    font-size: 4.6rem;
     background-color: #fff0;
     border: 1px solid #fff;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
 
 .book_form table tr:nth-child(4) td input {
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     border-style: none;
     color: #3bd8cf;
     font-size: 4.2rem;
@@ -421,15 +411,17 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3bd8cf;
-    height: 55.5rem;
+    height: 62rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .join_us .top {
-    padding-top: 8%;
-    width: 100%;
+    margin-top: 7%;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
     display: flex;
     justify-content: space-around;
 }
@@ -437,38 +429,43 @@ html {
 .join_us .top .item p {
     font-size: 3.8rem;
     color: white;
-    margin-bottom: 1rem;
+}
+
+.join_us .top .item img {
+    margin-top: 4rem;
+    width: 100%;
 }
 
 .join_us .bottom {
     width: 100%;
+    margin-bottom: 2%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.join_us .bottom input {
+.join_us .bottom .link {
     border: 1px solid white;
     background-color: #0000;
-    width: 30%;
-    border-radius: 1rem;
-    line-height: 1.2rem;
+    border-radius: 3rem;
+    line-height: 3.2rem;
     padding-left: 2%;
+    padding-right: 9%;
     color: white;
     font-size: 3rem;
 }
 
-.join_us .bottom span {
+.join_us .bottom .copy {
     font-size: 2.4rem;
     color: white;
 }
 
 /*门店信息*/
 .shops {
-    width: 76%;
-    padding: 5% 12%;
+    width: 64%;
+    padding: 5% 18%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .shops .address {
@@ -476,7 +473,7 @@ html {
 }
 
 .shops .address p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 2.2rem;
     margin-bottom: 1rem;
 }
