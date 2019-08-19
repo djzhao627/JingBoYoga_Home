@@ -346,10 +346,12 @@ html {
 
 .equipment .line_2 img:nth-child(1) {
     width: 33%;
+    height: 100%;
 }
 
 .equipment .line_2 img:nth-child(2) {
     width: 66%;
+    height: 100%;
 }
 
 
