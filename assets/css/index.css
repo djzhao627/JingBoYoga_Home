@@ -280,8 +280,8 @@ html {
 /*教学环境*/
 .surroundings {
     margin-top: 18rem;
-    padding: 0 6%;
-    width: 88%;
+    padding: 0 6.25%;
+    width: 87.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
